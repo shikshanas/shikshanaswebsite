@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Shikshanas : Testimonial</title>
+    <title>Shikshanas : Team</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -31,6 +31,73 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f7f7f7;
+        }
+    
+        .blog-section {
+          padding: 60px 20px;
+        }
+    
+        .blog-card {
+          background: #fff;
+          border-radius: 15px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+    
+        .blog-card:hover {
+          transform: translateY(-10px);
+        }
+    
+        .blog-card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+    
+        .blog-content {
+          padding: 20px;
+        }
+    
+        .blog-content h5 {
+          font-weight: bold;
+          color: #1e293b;
+        }
+    
+        .blog-content p {
+          color: #555;
+          font-size: 14px;
+        }
+    
+        .read-more-btn {
+          background-color: #fb873f;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 5px;
+          text-decoration: none;
+          display: inline-block;
+          transition: background 0.3s ease;
+        }
+    
+        .read-more-btn:hover {
+          background-color: #e66a1d;
+        }
+    
+        .section-title {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+    
+        .section-title h2 {
+          font-weight: bold;
+          color: #1e293b;
+        }
+      </style>
 
 
 </head>
@@ -66,6 +133,7 @@
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -87,11 +155,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Student Reviews</h1>
+                    <h1 class="display-3 text-white animated slideInDown">Our Blogs</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Reviews</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Blogs</li>
                         </ol>
                     </nav>
                 </div>
@@ -101,58 +169,55 @@
     <!-- Header End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+
+    <!-- All blogs cards Start -->
+    <section class="blog-section text-center">
         <div class="container">
-            <div class="text-center">
-                <h1 class=" bg-white text-center px-3" style="color: #fb873f;">Success stories</h1>
-                <p class="mb-5">Can Shikshanas courses help your career? Our learners tell us how.</p>
+          <div class="section-title " data-aos="fade-down">
+            <h2 class="mt-2">Latest Blog Posts</h2>
+            <p>Explore tips, tutorials, and news from the world of Web Development</p>
+          </div>
+    
+          <div class="row g-4">
+            <!-- Blog Card 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+              <div class="blog-card">
+                <img src="img/blog1.png" alt="Best Web Development Institute in Karnataka">
+                <div class="blog-content">
+                  <h5>Why Shikshanas is the Best Web Development Institute in Karnataka</h5>
+                  <p>Discover how our 100% job guarantee program transforms students from non-IT backgrounds into full-stack developers...</p>
+                  <a href="why-shikshanas-best-web-development-institute.html" class="read-more-btn">Read Full Blog</a>
+                </div>
+              </div>
             </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Sarah K.</h5>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">I stumbled upon Shikshanas while searching for free courses. The quality
-                            surpassed my expectations! The content was rich, and the instructors were knowledgeable.
-                            I've already recommended it to my friends.</p>
-                    </div>
+    
+            <!-- Blog Card 2 -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="blog-card">
+                <img src="img/blog2.png" alt="Frontend vs Backend - What to Learn First?">
+                <div class="blog-content">
+                  <h5>Frontend vs Backend - What Should You Learn First?</h5>
+                  <p>Confused between frontend and backend? We break down the differences and guide you on where to start based on your goals...</p>
+                  <a href="/frontend-vs-backend.html" class="read-more-btn">Read Full Blog</a>
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">John M.</h5>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">As a working professional, finding free courses that match my schedule was a
-                            game-changer. The courses are engaging, and the community aspect adds immense value. Highly
-                            recommended!</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">David P.</h5>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">I've taken multiple courses here, and each one has been fantastic. The
-                            platform's design makes learning enjoyable, and the knowledge gained is invaluable. It's
-                            hard to believe these courses are free!</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Lisa S.</h5>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">I'm amazed at the quality of the free courses available. The instructors are
-                            experts in their fields, and the interactive lessons make learning a breeze. Thank you for
-                            this opportunity!</p>
-                    </div>
-                </div>
+              </div>
             </div>
+    
+            <!-- Blog Card 3 -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="blog-card">
+                <img src="img/blog3.png" alt="Top Skills for Full Stack Developers in 2025">
+                <div class="blog-content">
+                  <h5>Top Skills Every Full Stack Developer Needs in 2025</h5>
+                  <p>From GitHub to React, here are the must-have tools, frameworks, and soft skills to thrive in the software industry this year...</p>
+                  <a href="/top-skills-full-stack-2025.html" class="read-more-btn">Read Full Blog</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+      </section>
+    <!-- All blogs cards End -->
 
 
     <!-- Footer Start -->
